@@ -38,7 +38,6 @@
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
 </head>
 
@@ -53,7 +52,7 @@
     <header id="home">
 
         <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-fixed dark no-background bootsnav">
+        <nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
 
             <div class="container">
 
@@ -73,11 +72,57 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" class="logo logo-display" alt="Logo">
                         <img src="assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li class="dropdown dropdown-right">
+                            <a href="#home" class="dropdown-toggle smooth-menu" data-toggle="dropdown" >Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home Version One</a></li>
+                                <li><a href="index-2.html">Home Version Two</a></li>
+                                <li><a href="index-3.html">Home Version Three</a></li>
+                                <li><a href="index-4.html">Home Version Four</a></li>
+                                <li><a href="index-5.html">Home Version Five</a></li>
+                                <li><a href="index-6.html">Home Version Six</a></li>
+                                <li><a href="index-7.html">Home Version Seven</a></li>
+                                <li><a href="index-8.html">Home Version Eight</a></li>
+                                <li><a href="index-9.html">Home Version Nine <span class="badge">Trending</span></a></li>
+                                <li><a href="index-10.html">Home Version Ten <span class="badge">New</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#overview">Overview</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#team">Team</a>
+                        </li>
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" href="login.html">Login</a></li>
+                                <li><a target="_blank" href="register.html">Register</a></li>
+                                <li><a href="404.html">Error 404</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div>
 
         </nav>
@@ -88,52 +133,51 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area content-double banner-top-padding text-dark bg-theme small-text lg:px-48 lg:py-36">
+    <div class="banner-area content-double shape-line bg-theme-small normal-text">
         <div class="box-table">
             <div class="box-cell">
                 <div class="container">
                     <div class="double-items">
                         <div class="row align-center">
-                            <div class="col-lg-6 left-info simple-video">
+                            <div class="col-lg-5 left-info simple-video">
                                 <div class="content" data-animation="animated fadeInUpBig">
-                                    <p class="font-bold text-lg bg-[#ff0000] w-fit text-white px-2">
-                                        Curso de Delegación para Empresarios
+                                    <h1>We're building <span>software</span> for you</h1>
+                                    <p>
+                                        Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it without me.
                                     </p>
-                                    <h1>Como hacer que <span>tu empresa funcione</span> de forma independiente</h1>
-                                    <p class="text-lg font-semibold">
-                                        <span class="text-black bg-black">Si sientes que explicar una tarea toma demasiado tiempo y prefieres hacerla tú mismo,</span> es momento de aprender a delegar.
-                                    </p>
-                                    <a class="btn circle btn-light effect btn-md" href="#">Ir al Curso de Delegación</a>
+                                    <a class="btn circle btn-theme border btn-md" href="#">Get Started</a>
+                                    <a class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=owhuBrGIOsE">
+                                        <i class="fa fa-play"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 right-info">
-                                <img src="assets/img/inicio.png" alt="Inicio">
+                            <div class="col-lg-7 right-info">
+                                <img src="assets/img/800x600.png" alt="Thumb">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="wavesshape shape">
-                    <img src="assets/img/waves-shape-2.svg" alt="Shape">
+                <div class="wavesshape">
+                    <img src="assets/img/waves-shape.svg" alt="Shape">
                 </div>
             </div>
         </div>
     </div>
-
-    
     <!-- End Banner -->
 
     <!-- Start About 
     ============================================= -->
-    <div id="about" class="about-area default-padding lg:px-48">
+    <div id="about" class="about-area default-padding">
         <div class="container">
-            <div class="row justify-center">
+            <div class="row">
                 <div class="col-lg-6 default info">
-                    <h2 class="text-2xl mb-1">La mayoría de las empresas <br>latinoamericanas tienen</h2>
-                    <h4 class="text-2xl mb-4">problemas de delegación...</h4>
-                    <p class="text-lg">
-                        <strong>Si sientes que todo sale mal cuando no estás en tu empresa,</strong> es probable que estés enfrentando dificultades al delegar responsabilidades.
+                    <h4>Story about us</h4>
+                    <h2>Create your app page <br>with expert developer</h2>
+                    <p>
+                        Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. 
                     </p>
-                    <!-- <div class="bottom-info">
+                    <a href="#" class="btn circle btn-theme effect btn-md">Read more</a>
+                    <div class="bottom-info">
                         <h3>Why Choose Us</h3>
                         <ul>
                             <li>
@@ -149,34 +193,11 @@
                                 <i class="fas fa-check"></i> <span>Branched is on an ecstatic directly it</span>
                             </li>
                         </ul>
-                    </div> -->
-                </div>
-                <div class="col-lg-6 pb-16">
-                    <div class="flex flex-col lg:flex-row justify-center items-center">
-                        <div class="bg-[#49c2f2] text-white rounded-full m-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-check" viewBox="0 0 16 16">
-                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-                            </svg>
-                        </div>
-                        <p class="text-lg">
-                            <strong>Falsa creencia: "Si quieres que algo salga bien, hazlo tú mismo"</strong>. Muchos empresarios caen en esta mentalidad, lo que representa uno de los mayores obstáculos que pueden enfrentar.
-                        </p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row justify-center items-center mt-4">
-                        <div class="bg-[#49c2f2] text-white rounded-full m-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-check" viewBox="0 0 16 16">
-                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-                            </svg>
-                        </div>
-                        <p class="text-lg">
-                            <strong>La falta de delegación es un obstáculo importante para el crecimiento empresarial.</strong> Si el empresario no delega, pasará el día resolviendo problemas en lugar de enfocarse en hacer crecer su negocio.
-                        </p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-6 services-info">
-                    
+                <div class="col-lg-6 services-info">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 single-item">
+                        <div class="col-lg-6 col-md-6">
                             <div class="item">
                                 <i class="flaticon-ticket"></i>
                                 <h4>Ticket manage</h4>
@@ -185,7 +206,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 single-item">
+                        <div class="col-lg-6 col-md-6">
                             <div class="item">
                                 <i class="flaticon-speech-bubble"></i>
                                 <h4>Live messaging</h4>
@@ -194,7 +215,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 single-item">
+                        <div class="col-lg-6 col-md-6">
                             <div class="item">
                                 <i class="flaticon-email"></i>
                                 <h4>Email workflow</h4>
@@ -203,7 +224,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 single-item">
+                        <div class="col-lg-6 col-md-6">
                             <div class="item">
                                 <i class="flaticon-file"></i>
                                 <h4>File upload</h4>
@@ -213,48 +234,91 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                
-                <div class="flex flex-col justify-center items-center border-l-8 border-[#ff0000] p-4">
-                    <p class="text-black text-3xl font-bold pb-4 text-center lg:px-16">
-                        Si dices <strong class="font-extrabold text-[#49c2f2]">“Estoy muy ocupado y no puedo delegar”</strong> <br>entonces es momento de aprender a delegar.
-                    </p>
-                    <a href="#" class="btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
                 </div>
-                
             </div>
         </div>
     </div>
     <!-- End About -->
 
-<!-- Start Features 
+    <!-- Start Companies Area 
+    ============================================= -->
+    <div class="companies-area default-padding bg-theme-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 info">
+                    <h4>Trusted by the world's best companies</h4>
+                    <p>
+                        Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
+                    </p>
+                </div>
+                <div class="col-lg-8 clients">
+                    <div class="clients-items owl-carousel owl-theme text-center">
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/150x80.png" alt="Clients"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Companies Area -->
+
+    <!-- Start Features 
     ============================================= -->
     <div id="features" class="features-area cell-items bg-gray default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2 class="text-3xl">Problemas comunes de delegación en las empresas:</h2>
-                        
+                        <h2>Our Features</h2>
+                        <p>
+                            Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose. 
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-center">
-                
+            <div class="row">
+                <div class="col-lg-5 features-thumb">
+                    <img src="assets/img/800x600.png" alt="Thumb">
+                </div>
                 <div class="col-lg-7 features-items">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 single-item">
                             <div class="item">
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-rocket-takeoff-fill m-7" viewBox="0 0 16 16">
-                                        <path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.6 3.6 0 0 0-.108-.563 2 2 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2 2 0 0 0-.16-.045 4 4 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.55 2.55 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361s.437 1.732-.36 2.531Z"/>
-                                        <path d="M5.205 10.787a7.6 7.6 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925"/>
-                                      </svg>
+                                    <i class="flaticon-scroll"></i>
                                 </div>
                                 <div class="info">
-                                    <h4 class="text-xl"><strong class="text-[#49c2f2]">Problema 1:</strong> sobrecargo de trabajo constante</h4>
+                                    <h4>Drag and drop</h4>
                                     <p>
-                                        Los dueños suelen estar sobrecargados de tareas porque muchos todavía creen en la idea de que <strong>"si quieres que algo se haga bien, hazlo tú mismo."</strong>
+                                        Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
                                     </p>
                                 </div>
                             </div>
@@ -262,14 +326,12 @@
                         <div class="col-lg-6 col-md-6 single-item">
                             <div class="item">
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-person-fill-gear m-7" viewBox="0 0 16 16">
-                                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                                    </svg>
+                                    <i class="flaticon-intersect"></i>
                                 </div>
                                 <div class="info">
-                                    <h4 class="text-xl"><strong class="text-[#49c2f2]">Problema 2:</strong> si quieres que algo salga bien, hazlo tú mismo</h4>
+                                    <h4>App integration</h4>
                                     <p>
-                                        Esta creencia errónea es común en muchas empresas familiares y representa uno de los mayores errores en los que los empresarios pueden caer.
+                                        Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
                                     </p>
                                 </div>
                             </div>
@@ -277,14 +339,12 @@
                         <div class="col-lg-6 col-md-6 single-item">
                             <div class="item">
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-sign-merge-left-fill m-8" viewBox="0 0 16 16">
-                                        <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM7.25 6H6.034a.25.25 0 0 1-.192-.41l1.966-2.36a.25.25 0 0 1 .384 0l1.966 2.36a.25.25 0 0 1-.192.41H8.75v6h-1.5V8.823c-.551.686-1.229 1.363-1.88 2.015l-.016.016-.708-.708c.757-.756 1.48-1.48 2.016-2.196q.377-.499.588-.95z"/>
-                                    </svg>
+                                    <i class="flaticon-rgb"></i>
                                 </div>
                                 <div class="info">
-                                    <h4 class="text-xl"><strong class="text-[#49c2f2]">Problema 3:</strong> todo depende de mí, no puedo delegar</h4>
+                                    <h4>Color Schemes</h4>
                                     <p>
-                                        Muchos empresarios han intentado delegar tareas sin éxito, lo que les lleva a pensar que delegar es una pérdida de tiempo. Además, creen firmemente que nadie puede realizar las tareas con la misma eficacia y agilidad que ellos.
+                                        Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
                                     </p>
                                 </div>
                             </div>
@@ -292,14 +352,12 @@
                         <div class="col-lg-6 col-md-6 single-item">
                             <div class="item">
                                 <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-trophy-fill m-8" viewBox="0 0 16 16">
-                                        <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
-                                    </svg>
+                                    <i class="flaticon-resolution"></i>
                                 </div>
                                 <div class="info">
-                                    <h4 class="text-xl"><strong class="text-[#49c2f2]">Problema 4:</strong> Explicar una tarea lleva demasiado tiempo, prefiero hacerla yo mismo</h4>
+                                    <h4>High Resolution</h4>
                                     <p>
-                                        Como empresario, tu objetivo principal es hacer crecer la empresa. Si no delegas y te ocupas de tareas operativas a diario, es seguro que tu negocio no crecerá y podría incluso llegar a colapsar.
+                                        Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry
                                     </p>
                                 </div>
                             </div>
@@ -310,48 +368,6 @@
         </div>
     </div>
     <!-- End Features -->
-
-    <!-- Start Why Chose Us 
-    ============================================= -->
-    <div id="choseus" class="choseus-area default-padding lg:px-48">
-        <div class="container">
-            <div class="choseus-items">
-                <div class="row justify-center">
-                    <div class="col-lg-4 thumb">
-                        <img src="assets/img/aprender.jpg" alt="Thumb">
-                    </div>
-                    <div class="col-lg-8 info">
-                        <h2 class="text-3xl">Lo que aprenderás en el curso de delegación para empresarios</h2>
-                        <p>
-                            En el curso de delegación, descubrirás estrategias clave y técnicas efectivas que cambiarán tu enfoque hacia la delegación, asegurando que tus empleados realicen adecuadamente las tareas que les asignes. A continuación, te presentamos los puntos esenciales que abordaremos:
-                        </p>
-                        <ul>
-                            <li class="text-xl">
-                                ¿Cómo proporcionar a tus empleados un conjunto de pasos sencillo para que realicen las tareas que les delegas?
-                                <p class="text-base py-4">Este segmento se enfoca en cómo simplificar tareas complejas en procedimientos claros y concisos. Te ofreceremos técnicas para dividir tareas grandes en pasos manejables y cómo comunicar estos procesos a tu equipo de forma que sean fáciles de entender y seguir.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Cómo deben reportar tus empleados para garantizar que el trabajo delegado se realice según tus expectativas?
-                                <p class="text-base py-4">En este módulo, examinaremos las mejores prácticas para implementar sistemas de reporte eficaces. Aprenderás a crear formatos de reporte que faciliten la comunicación rápida y efectiva sobre el progreso y los problemas, permitiéndote tomar decisiones informadas y hacer ajustes necesarios sin demoras.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Cómo asegurar que tus empleados realicen las tareas que les delegas?
-                                <p class="text-base py-4">Descubrirás métodos eficaces para supervisar y controlar el avance de las tareas delegadas sin caer en el micromanagement. Aprenderás a establecer puntos de control y métricas de rendimiento que garanticen que las tareas se completen a tiempo y cumplan con los estándares requeridos, mientras mantienes un ambiente de trabajo positivo y motivador.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Qué tareas delegar?
-                                <p class="text-base py-4">Aprenderás a identificar las tareas que debes delegar para optimizar tu productividad y enfocarte en los aspectos que tienen mayor impacto en el crecimiento de tu negocio. Este módulo te enseñará a distinguir entre las tareas que requieren tu atención personal y aquellas que tu equipo puede manejar de manera efectiva, maximizando así el potencial de todos los integrantes del equipo.</p>
-                            </li>
-                            <p class="text-base py-4">Cada módulo está diseñado para equiparte con un conocimiento integral de la delegación, desde la planificación inicial hasta la ejecución y supervisión final, asegurando que cada trabajo delegado contribuya al éxito general de tu empresa.</p>
-                            
-                        </ul>
-                    </div>
-                    <a href="#" class="btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Us -->
 
     <!-- Start Overview 
     ============================================= -->
@@ -360,383 +376,56 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
-                        <h2 class="text-3xl mb-8">Si no te gusta el curso te devolvemos tu dinero</h2>
-                        <div class="border-x-8 px-8 border-[#49c2f2]">
-                            <p class="font-extrabold text-2xl">
-                                Garantía de Satisfacción de 30 Días: Compromiso Sin Riesgos
-                            </p>
-                            <p class="text-xl mt-2 text-justify">
-                                Entendemos lo valiosa que es tu inversión, tanto de tiempo como de dinero, en el crecimiento de tu negocio y en tu desarrollo personal. Por eso, el "Curso de Delegación para Empresarios" incluye una garantía de satisfacción total de 30 días. Si, por cualquier razón, sientes que el curso no ha cumplido con tus expectativas o simplemente decides que no es adecuado para ti, te ofrecemos un reembolso completo. Sin preguntas ni complicaciones. Solo envíanos un correo electrónico dentro de los 30 días posteriores a tu compra y te reembolsaremos cada centavo. Queremos que te sientas seguro de que unirte a nosotros es la decisión correcta, sin ningún riesgo para ti.
-                            </p>
-                            <a href="#" class="mt-4 btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
-                        </div>
-
+                        <h2>Quick Software Overview</h2>
+                        <p>
+                            Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose. 
+                        </p>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 text-center overview-items">
+                    <!-- Tab Nav -->
+                    <ul id="tabs" class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="" data-target="#tab1" data-toggle="tab" class="active nav-link">
+                                <i class="flaticon-test"></i>
+                                Collaboration
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" data-target="#tab2" data-toggle="tab" class="nav-link">
+                                <i class="flaticon-heart"></i>
+                                Technology
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" data-target="#tab3" data-toggle="tab" class="nav-link">
+                                <i class="flaticon-dental-checkup"></i>
+                                Customize
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Tab Nav -->
+
+                    <!-- Start Tab Content -->
+                    <div id="tabsContent" class="tab-content">
+                        <div id="tab1" class="tab-pane fade active show">
+                            <img src="assets/img/1500x700.png" alt="Thumb">
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                            <img src="assets/img/1500x700.png" alt="Thumb">
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                            <img src="assets/img/1500x700.png" alt="Thumb">
+                        </div>
+                    </div>
+                    <!-- End Tab Content -->
                 </div>
             </div>
         </div>
     </div>
     <!-- End Overview -->
-
-    <!-- Start Features 
-    ============================================= -->
-    <div id="features" class="features-area features-list default-padding lg:px-48">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2 class="text-3xl">Esto es todo lo que recibirás al inscribirte hoy:</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="features-box">
-                <!-- Single Item -->
-                <div class="features-item">
-                    <div class="row">
-                        <div class="col-lg-5 features-thumb">
-                            <img src="assets/img/beneficio.jpg" alt="Thumb">
-                        </div>
-                        <div class="col-lg-7 features-items">
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Curso de Delegación para Empresarios</h4>
-                                        <p class="text-base">
-                                            Aprenderás el proceso completo para delegar como un profesional y dejar atrás las tareas operativas en tu empresa.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Acceso a las grabaciones de por vida</h4>
-                                        <p class="text-base">
-                                            Las clases están grabadas y almacenadas en nuestra plataforma de cursos, lo que te permitirá acceder a cada una de ellas de manera permanente.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Bonus 1: Guía Paso a Paso para Delegar Tareas Comunes</h4>
-                                        <p class="text-base">
-                                            Este bonus te proporcionará una herramienta valiosa para maximizar la productividad y eficiencia, liberando tu tiempo para enfocarte en los aspectos estratégicos de tu negocio que requieren tu atención.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="features-item">
-                    <div class="row">
-                        <div class="col-lg-5 order-lg-last features-thumb">
-                            <img src="assets/img/beneficio1.jpg" alt="Thumb">
-                        </div>
-                        <div class="col-lg-7 order-lg-first features-items">
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Bonus 2: "Qué tareas debes evitar delegar"</h4>
-                                        <p class="text-base">
-                                            Este bonus te ayudará a fortalecer tu liderazgo, garantizando que las tareas clave para el éxito y la sostenibilidad de tu empresa se mantengan bajo tu supervisión directa, mientras delegas otras tareas para optimizar la operatividad y eficiencia general.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Bonus 3: "Planilla de Control de Trabajo Delegado"</h4>
-                                        <p class="text-base">
-                                            Esta planilla es una herramienta valiosa que te permitirá mantener un control riguroso sobre las tareas delegadas y asegurar que tu equipo trabaje de manera cohesiva hacia los objetivos comunes del negocio.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-check"></i> 
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="text-lg">Bonus 4: "Sesión de Consultoría sobre Delegación"</h4>
-                                        <p class="text-base">
-                                            Esta sesión está diseñada para abordar tus desafíos específicos y optimizar tu estrategia de delegación, asegurando que obtengas el máximo provecho de tus esfuerzos en este ámbito.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-            </div>
-            <div class="flex flex-col justify-center w-full items-center">
-                <img src="assets/img/promo.jpg" alt="Promo 27USD" class="mt-8">
-                <a href="#" class="mt-4 btn circle w-fit text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Consulta por el Curso</a>
-            </div>
-        </div>
-    </div>
-    <!-- End Features -->
-
-    <!-- Start Why Chose Us 
-    ============================================= -->
-    <div id="choseus" class="choseus-area default-padding lg:px-48">
-        <div class="container">
-            <div class="choseus-items">
-                <div class="row justify-center">
-                    <div class="info">
-                        <h2 class="text-3xl">¿Estás cansado de que tus empleados no realicen correctamente las tareas que les asignas?</h2>
-                        <p class="text-xl text-center pb-4">
-                            ¿Te sientes abrumado por el trabajo operativo y no tienes tiempo para otras tareas?
-                        </p>
-                        <ul>
-                            <li class="text-xl">
-                                ¿Pasas todo el día "apagando incendios" y no tienes tiempo para enfocarte en la estrategia de tu empresa?
-                                <p class="text-base py-4">Si sientes que todo el funcionamiento de tu empresa depende exclusivamente de ti y que cada decisión debe pasar por tus manos, no estás solo. Esta situación es más común de lo que piensas entre los empresarios.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Te sientes abrumado por la carga del trabajo operativo?
-                                <p class="text-base py-4">Cada día puede parecer una lucha contra el reloj, y el volumen de trabajo operativo parece interminable. Esta presión constante afecta tu productividad y limita la capacidad de hacer crecer tu negocio.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Tu empresa no crece como deseas?
-                                <p class="text-base py-4">Estás tan inmerso en las tareas operativas diarias que encontrar tiempo y recursos para planificar y ejecutar estrategias de crecimiento parece una tarea imposible. Esta realidad crea un círculo vicioso que frena el potencial de crecimiento de tu empresa.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Tus empleados no trabajan bien en tu ausencia?
-                                <p class="text-base py-4">A pesar de contar con un equipo, sabes que si no estás presente, las cosas no se harán a tu manera o, simplemente, no se harán. Esta falta de confianza obstaculiza la delegación efectiva, limitando la eficiencia general de tu negocio.</p>
-                            </li>
-                            <li class="text-xl">
-                                ¿Tu empresa corre el riesgo de colapsar si no estás presente?
-                                <p class="text-base py-4">La dependencia del negocio en tu presencia y gestión diaria aumenta el riesgo de colapso si algo impide que estés al 100%. Esta vulnerabilidad pone en peligro la sostenibilidad y continuidad de tu empresa a largo plazo.</p>
-                            </li>
-                            <li class="text-xl">
-                                Es momento de trabajar más inteligentemente, no más duro.
-                                <p class="text-base py-4">A pesar de contar con un equipo, sabes que si no estás presente, las cosas no se harán a tu manera o, simplemente, no se harán. Esta falta de confianza obstaculiza la delegación efectiva, limitando la eficiencia general de tu negocio.</p>
-                            </li>                            
-                        </ul>
-                    </div>
-                    <a href="#" class="btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Us -->
-
-    <!-- Start Why Chose Us 
-    ============================================= -->
-    <div id="choseus" class="choseus-area default-padding lg:px-48">
-        <div class="container">
-            <div class="choseus-items">
-                <div class="row justify-center">
-                    <div class="info">
-                        <h2 class="text-3xl text-center">TEST DE <span class="bg-[#49c2f2] text-white">DELEGACIÓN</span>:</h2>
-                        <p class="text-center text-lg mb-2 font-bold">
-                            Si respondes "SÍ" a alguna de estas preguntas, entonces estás delegando de manera ineficaz...
-                        </p>
-                        <div class="flex flex-col lg:flex-row justify-center items-start">
-                            <div class="flex flex-col justify-start">
-                                <div class="text-lg m-4 border p-4 rounded">
-                                    ¿Tienes un exceso de trabajo operativo mientras tus empleados parecen desocupados y sin desafíos?
-                                </div>
-                                <div class="text-lg m-4 border p-4 rounded">
-                                    ¿Tu equipo depende de ti para cada decisión que deben tomar?
-                                </div>
-                                <div class="text-lg m-4 border p-4 rounded">
-                                    ¿Sigues realizando tareas operativas que ya no deberían ocupar tu tiempo?
-                                </div>
-                            </div>
-                            <div  class="flex flex-col justify-start">
-                                <div class="text-lg m-4 border p-4 rounded">
-                                    ¿Conoces a otros empresarios que parecen disfrutar de más tiempo libre que tú?
-                                </div>
-                                <div class="text-lg m-4 border p-4 rounded">
-                                    ¿Te has visto obligado a evitar tomar vacaciones debido al volumen de trabajo en tu empresa?
-                                </div>                                                      
-                            </div>
-                        </div>
-                        <p class="text-center text-lg my-2">
-                            Si has respondido "Sí" a alguna de estas preguntas, es probable que estés delegando de manera incorrecta.
-                        </p>
-                    </div>
-                    <a href="#" class="btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Us -->
-
-     <!-- Start Why Chose Us 
-    ============================================= -->
-    <div id="choseus" class="choseus-area default-padding lg:px-48">
-        <div class="container">
-            <div class="row justify-center">
-                <div class="info">
-                    <h2 class="text-3xl text-center pb-4 font-bold">¿Por qué algunos empresarios se resisten a delegar?</h2>
-                    <p class="text-xl text-center pb-4">
-                        Existen varias razones, muchas de ellas basadas en malentendidos:
-                    </p>
-                    <ul>
-                        <li class="text-xl font-bold border-x-8 my-4 px-4 border-[#49c2f2]">
-                            1. "No puedo confiar en nadie para manejar esto."
-                            <p class="text-base pt-2 font-base pb-4">Aunque es cierto que algunos empleados pueden no estar preparados debido a la falta de formación o experiencia, hay muchas otras tareas que puedes delegar con confianza, especialmente si ofreces la instrucción y la práctica adecuadas.</p>
-                        </li>
-                        <li class="text-xl font-bold border-x-8 my-4 px-4 border-[#49c2f2]">
-                            2. "Yo puedo hacerlo mejor que cualquiera de mis trabajadores."
-                            <p class="text-base pt-2 font-base pb-4">Aunque esto puede ser cierto, no significa que debas realizar tareas que otros pueden llevar a cabo. Si bien puedes limpiar mejor que el personal de limpieza, ¿deberías asumir esa responsabilidad?</p>
-                        </li>
-                        <li class="text-xl font-bold border-x-8 my-4 px-4 border-[#49c2f2]">
-                            3. "No tengo tiempo para explicar cómo hacer este trabajo."
-                            <p class="text-base pt-2 font-base pb-4">Es cierto que delegar requiere tiempo y esfuerzo inicial, lo que puede hacer que parezca más fácil hacer el trabajo tú mismo. Sin embargo, el tiempo que inviertes en tareas delegables es tiempo que podrías usar en actividades de mayor valor que solo tú puedes realizar.</p>
-                        </li>
-                        <li class="text-xl font-bold border-x-8 my-4 px-4 border-[#49c2f2]">
-                            4. "Debo mantener el control."
-                            <p class="text-base pt-2 font-base pb-4">Algunos empresarios temen perder el control al delegar. Sin embargo, la persona que asume la tarea es responsable ante ti por la calidad y la puntualidad del trabajo. Puedes mantener el control estableciendo estándares claros y comunicándolos junto con la tarea asignada.</p>
-                        </li>                           
-                    </ul>
-                    <p class="text-xl text-center font-bold pb-4">
-                        ¿Alguna de estas excusas te está limitando?
-                    </p>
-                    <p class="text-xl text-center pb-4">
-                        Si es así, es momento de cambiar tu enfoque y buscar más oportunidades para delegar tareas a aquellos que pueden manejarlas eficazmente.
-                    </p>
-                </div>
-                <a href="#" class="btn circle text-white hover:bg-[#49c2f2] effect bg-[#ff0000] btn-md">Ir al Curso de Delegación</a>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Us -->
-    
-    <!-- Start Features 
-    ============================================= -->
-    <div id="features" class="features-area cell-items bg-gray default-padding">
-        <div class="container flex flex-col justify-center items-center">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h2 class="text-3xl">Beneficios que obtienes al comprar el curso</h2>
-                        <p class="text-xl text-center py-4">
-                            Al adquirir el "Curso de Delegación para Empresarios", no solo aprendes a delegar, sino que también desbloqueas una serie de beneficios que transforman tu experiencia como empresario. Aquí algunos de ellos:
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-center">
-                
-                <div class="col-lg-7 features-items">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 single-item">
-                            <div class="item">
-                                <div class="info p-4 border rounded">
-                                    <p class="text-lg">
-                                        <strong>Mayor libertad:</strong> Imagina tener un día lleno de espacio para respirar, pensar y crear. Dominar el arte de delegar te libera de las tareas diarias, permitiéndote concentrarte en la visión a largo plazo, explorar nuevas oportunidades de negocio y disfrutar de una vida más allá de las paredes de tu empresa.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 single-item">
-                            <div class="item">
-                                <div class="info p-4 border rounded">
-                                    <p class="text-lg">
-                                        <strong>Mejor balance vida-trabajo:</strong> La vida no se trata solo de trabajar. Al delegar de manera efectiva, recuperas tiempo para ti mismo, para pasar con tu familia, disfrutar de tus hobbies y descansar. Este curso te enseña a lograr ese equilibrio, mejorando tu bienestar y el de tus seres queridos.<br><br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 single-item">
-                            <div class="item">
-                                <div class="info p-4 border rounded">
-                                    <p class="text-lg">
-                                        <strong>Negocio en crecimiento:</strong> La delegación no solo se trata de liberarte; también empodera a tu equipo para que tome la iniciativa y contribuya al crecimiento del negocio. Al aplicar lo aprendido, verás cómo tu empresa se expande, innova y se vuelve más competitiva, todo mientras construyes un equipo más fuerte y comprometido.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 single-item">
-                            <div class="item">
-                                <div class="info p-4 border rounded">
-                                    <p class="text-lg">
-                                        <strong>Control efectivo sin la carga del trabajo operativo diario:</strong> Aprenderás a mantener un control estratégico sobre tu empresa sin estar atrapado en cada pequeña decisión. Gracias a sistemas de reporte eficientes y comunicación efectiva, te mantendrás informado y en control, asegurando que tu empresa funcione sin problemas, incluso cuando no estés presente.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col justify-center items-center my-20 bg-white shadow-md w-fit border-l-8 border-[#ff0000] p-4">
-                <p class="text-black text-3xl font-bold pb-4 text-center lg:px-16">
-                    Si piensas que <strong class="font-extrabold text-[#49c2f2]"><br>"explicar una tarea requiere demasiado tiempo y<br> prefieres realizarla tú mismo",</strong><br>es fundamental que aprendas a delegar.                
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End Features -->
-
-    <div id="about" class="about-area mar-top-less default-padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="about-items text-center">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="about-content text-center">
-                            <h4>About Us</h4>
-                            <h2>What is Softing? </h2>
-                            <p>
-                                Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here upon. Acuteness you exquisite ourselves now end forfeited. Enquire ye without it garrets up himself. Interest our nor received followed was. Cultivated an up solicitude mr unpleasant. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="top-features">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 single-item">
-                                    <div class="item">
-                                        <i class="flaticon-speech-bubble"></i>
-                                        <h4>Live messaging</h4>
-                                        <p>
-                                            Downs those still witty an balls so chief so. Moment an little remain no lively 
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 single-item">
-                                    <div class="item">
-                                        <i class="flaticon-email"></i>
-                                        <h4>Email workflow</h4>
-                                        <p>
-                                            Downs those still witty an balls so chief so. Moment an little remain no lively 
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 single-item">
-                                    <div class="item">
-                                        <i class="flaticon-file"></i>
-                                        <h4>File upload</h4>
-                                        <p>
-                                            Downs those still witty an balls so chief so. Moment an little remain no lively 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End About -->
 
     <!-- Start Pricing Area
     ============================================= -->
